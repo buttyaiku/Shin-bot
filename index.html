@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>🧠 Shingo Chatbot</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>🧠 Shingo Chatbot</h1>
+      <p class="sub">Minomi Shingo の思考を体験できるミニマルAI</p>
+    </header>
+
+    <section id="chat" class="chat"></section>
+
+    <form id="form">
+      <textarea id="msg" placeholder="メッセージを入力..." rows="3"></textarea>
+      <div class="row">
+        <button id="send" type="submit">送信</button>
+        <button id="clear" type="button">リセット</button>
+      </div>
+    </form>
+
+    <footer>
+      <small>⚠️ 個人実験用。返答は助言であり保証ではありません。</small>
+    </footer>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
