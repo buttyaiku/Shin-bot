@@ -1,0 +1,17 @@
+:root { --bg:#0b0b0c; --card:#141416; --fg:#e9eaee; --muted:#9aa0a6; --acc:#5b9cff; }
+* { box-sizing: border-box; }
+body { margin:0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Hiragino Kaku Gothic ProN", sans-serif; background:var(--bg); color:var(--fg); }
+.container { max-width: 780px; margin: 40px auto; padding: 0 16px; }
+header h1 { margin: 0 0 4px; font-size: 28px; }
+.sub { margin: 0 0 16px; color: var(--muted); }
+.chat { background: var(--card); border: 1px solid #1f2023; border-radius: 12px; padding: 12px; height: 55vh; overflow-y: auto; }
+.bubble { padding: 10px 12px; margin: 8px 0; border-radius: 10px; line-height: 1.5; white-space: pre-wrap; }
+.me { background: #1b1d21; border: 1px solid #26282d; }
+.bot { background: #121923; border: 1px solid #1c2a3d; }
+form { margin-top: 12px; }
+textarea { width: 100%; background: #0e0f11; color: var(--fg); border: 1px solid #2a2c31; border-radius: 8px; padding: 10px; resize: vertical; }
+.row { display:flex; gap:8px; margin-top:8px; }
+button { flex:1; padding: 10px 14px; border: 1px solid #2a2c31; background: #111214; color: var(--fg); border-radius: 8px; cursor: pointer; }
+button#send { background: #14233a; border-color:#1c2a3d; }
+button:disabled { opacity: .6; cursor: not-allowed; }
+footer { margin-top: 10px; color: var(--muted); }
